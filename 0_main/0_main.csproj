@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\prg2.1_intro\prg2.1_intro.csproj" />
+    <ProjectReference Include="..\prg2.2_oop\prg2.2_oop.csproj" />
+    <ProjectReference Include="..\prg2.3_design_patterns\prg2.3_design_patterns.csproj" />
+    <ProjectReference Include="..\prg2.4_functional_programming\prg2.4_functional_programming.csproj" />
+    <ProjectReference Include="..\prg2.5_database_design\prg2.5_database_design.csproj" />
+    
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
