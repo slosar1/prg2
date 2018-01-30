@@ -14,8 +14,8 @@ namespace _0_main
         {
            Console.WriteLine("Launching main");
         
-           //Intro i = new Intro(args);
-           test(args);
+           Intro i = new Intro(args);
+           //test(args);
           
            Console.ReadKey();
            /*
