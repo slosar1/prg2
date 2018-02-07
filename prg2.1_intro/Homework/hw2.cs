@@ -7,21 +7,24 @@ namespace prg2._1_intro
         public void run()
         {
             //write all your code here!
-            Console.WriteLine("Leapyear");
-            int year = Convert.ToInt32(Console.ReadLine());
-            for (int l = 0; l > 20 ; l++)
+            Console.WriteLine("enter the year: ");
+            string stryear = Console.ReadLine();
+            int year = Convert.ToInt32(stryear);
+            year++;
+            for (int LeapYearCount = 0; LeapYearCount < 20; year++)
             {
-                if (year %100 == 0)
+                if (year %400 == 0)
                 {
-                    Console.WriteLine("Yes it is a Leapyear");
+                    Console.WriteLine(year + "Yes this is a Leapyear!");
+                    LeapYearCount++;
                 }
-                else if (year %400 == 0)
+                else if (year %100 == 0)
                 {
-                    Console.WriteLine("No this is not a Leapyear");
                 }
                 else if (year %4 == 0)
                 {
-                    Console.WriteLine("Yes it is a Leapyear");
+                    Console.WriteLine(year + "Yes this is a Leapyear");
+                    LeapYearCount++;
                 }
             }
         }
