@@ -6,15 +6,24 @@ using prg2._4_functional_programming;
 using prg2._5_database_design;
 
 
-namespace _0_main
+
+namespace prg2._0_main
 {
     class Program
     {
         static void Main(string[] args)
         {
            Console.WriteLine("Launching main");
-        
-           Intro i = new Intro(args);
+           coffeeTest() ;
+           Clock programming = new Clock(5,30,0);
+           programming.Tick();
+           int x = 0;
+           while(x!=5)
+           {
+               programming.Tick();
+               x ++;
+           }
+           //Intro i = new Intro(args);
            //test(args);
           
            Console.ReadKey();
@@ -27,6 +36,13 @@ namespace _0_main
 
            */
         
+        }
+        static void coffeeTest()
+        {
+            //CoffeeMaker lifesaver = new CoffeeMaker();
+
+           // lifesaver.AddGrains(5.0);
+            //int k = lifesver.AddGrains(4000000);
         }
         static void test(string [] args)
         {
