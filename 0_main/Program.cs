@@ -37,6 +37,7 @@ namespace _0_main
             Swapper<int>.Swap(List, List.next);
             Console.WriteLine("This is swapp version");
             List.next.Print();
+        }
             /*Console.WriteLine("IM resting node");
             string done= "";
 
@@ -55,14 +56,14 @@ namespace _0_main
 
             Node<double> k = n0[15];
             
-           /* if (n0 == n1)
+            if (n0 == n1)
             {
                 Console.WriteLine("they are equal");
             }
             else
             {
                 Console.WriteLine("they are not equal");
-            }*/
+            }
 
 
             /*Node<int> linkedList = new Node<int>(0);
@@ -75,11 +76,10 @@ namespace _0_main
                 linkedList = linkedList.next;
                 Console.WriteLine("Are you done adding y/n");
                 done = Console.ReadLine().ToLower();
-            }*/
-        /*linkedList.Print();
-        linkedList.PrintAll();
+            }
         }
-        
+        linkedList.Print();
+        linkedList.PrintAll();        
         static void CoffeeTest()
         {
             run();
@@ -102,11 +102,11 @@ namespace _0_main
         }
         static void test(string [] args)
         {
-              Intro i = new Intro(args);
-              OOP o = new OOP(args);
-              Design_Patterns d = new Design_Patterns(args);
-              Functional_Programming f = new Functional_Programming(args);
-              Database_Design dd = new Database_Design(args);
+            Intro i = new Intro(args);
+            OOP o = new OOP(args);
+            Design_Patterns d = new Design_Patterns(args);
+            Functional_Programming f = new Functional_Programming(args);
+            Database_Design dd = new Database_Design(args);
         }
          public static void run()
          {
@@ -144,12 +144,12 @@ namespace _0_main
                             int nleap = cyear;
                             int cout = 0;
                             while(cout != 20)
-                             {    
+                            {    
                                 nleap +=4;
                                 Console.WriteLine(nleap);
                                 cout++;
-                             }
-
+                            }
+                        }
                     }             
             }
             else 
@@ -164,6 +164,7 @@ namespace _0_main
                         Console.WriteLine(nleap);
                         cout++;
                     }
+                }
             }
          }         
             if(year % 4 != 0) 
@@ -177,17 +178,20 @@ namespace _0_main
                                     break;
                                 
                             }
-                Console.WriteLine("The next Leap year is" + cyear);
-                Console.WriteLine("The next 20 leap year is...");
-                int nleap = cyear;
-                int cout = 0;
-                while(cout != 20)
-                 {    
-                     nleap +=4;
-                     Console.WriteLine(nleap);
-                     cout++;
-                 }*/
+                            Console.WriteLine("The next Leap year is" + cyear);
+                            Console.WriteLine("The next 20 leap year is...");
+                            int nleap = cyear;
+                            int cout = 0;
+                            while(cout != 20)
+                            {    
+                                nleap +=4;
+                                Console.WriteLine(nleap);
+                                cout++;
+                            }
+                        }
+                    }    
+                }
             }        
-         }
+        }*/
     }
 }
