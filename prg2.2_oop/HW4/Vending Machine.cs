@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace prg2._2_oop
 {
@@ -13,7 +14,7 @@ namespace prg2._2_oop
             Ingredients[typeof(Pretzles)] = new Pretzles();
             Ingredients[typeof(Soda)] = new Soda();
             Ingredients[typeof(Candy)] = new Candy();
-            Ingredients[typeof(Lighters)] = new Coins();
+            Ingredients[typeof(Lighters)] = new Lighters();
             Ingredients[typeof(Crackers)] = new Crackers();
             Ingredients[typeof(Cookies)] = new Cookies();
 
@@ -27,96 +28,96 @@ namespace prg2._2_oop
         }
         public void AddChips(double AmountOfChips)
         {
-            if(Ingredients[typeof(Chips)]).Quantity + AmountOfChips > MaxIngredients[typeof(Chips)]
+            if(Ingredients[typeof(Chips)].Quantity + AmountOfChips > MaxIngredients[typeof(Chips)])
             {
                 throw new Exception("Too much Chips!!!");
             }
             else
             {
-                Ingredients[typeof(Chips)].Quantity + = AmountOfChips
+                Ingredients[typeof(Chips)].Quantity += AmountOfChips;
             }
         }
         public void AddPretzles(double AmountOfPretzles)
         {
-            if(Ingredients[typeof(Pretzles)]).Quantity + AmountOfPretzles > MaxIngredients[typeof(Pretzles)]
+            if(Ingredients[typeof(Pretzles)].Quantity + AmountOfPretzles > MaxIngredients[typeof(Pretzles)])
             {
                 throw new Exception("Too much Pretzles!!!");
             }
             else
             {
-                Ingredients[typeof(Pretzles)].Quantity + = AmountOfPretzles
+                Ingredients[typeof(Pretzles)].Quantity += AmountOfPretzles;
             }
         }
         public void AddSoda(double AmountOfSoda)
         {
-            if(Ingredients[typeof(Soda)]).Quantity + AmountOfSoda > MaxIngredients[typeof(Soda)]
+            if(Ingredients[typeof(Soda)].Quantity + AmountOfSoda > MaxIngredients[typeof(Soda)])
             {
                 throw new Exception("Too much Soda!!!");
             }
             else
             {
-                Ingredients[typeof(Soda)].Quantity + = AmountOfSoda
+                Ingredients[typeof(Soda)].Quantity += AmountOfSoda;
             }                   
         }
         public void AddCandy(double AmountOfCandy)
         {
-            if(Ingredients[typeof(Candy)]).Quantity + AmountOfCandy > MaxIngredients[typeof(Candy)]
+            if(Ingredients[typeof(Candy)].Quantity + AmountOfCandy > MaxIngredients[typeof(Candy)])
             {
                 throw new Exception("Too much Candy!!!");
             }
             else
             {
-                Ingredients[typeof(Candy)].Quantity + = AmountOfCandy
+                Ingredients[typeof(Candy)].Quantity += AmountOfCandy;
             }                   
         }
-        public void AddCoins(double AmountOfCoins)
+        public void AddLighters(double AmountOfLighters)
         {
-            if(Ingredients[typeof(Lighters)]).Quantity + AmountOfLighters > MaxIngredients[typeof(Lighters)]
+            if(Ingredients[typeof(Lighters)].Quantity + AmountOfLighters > MaxIngredients[typeof(Lighters)])
             {
                 throw new Exception("Too much Lighters!!!");
             }
             else
             {
-                Ingredients[typeof(Lighters)].Quantity + = AmountOfLighters
+                Ingredients[typeof(Lighters)].Quantity += AmountOfLighters;
             }                   
         }
         public void AddCrackers(double AmountOfCrackers)
         {
-            if(Ingredients[typeof(Crackers)]).Quantity + AmountOfCrackers > MaxIngredients[typeof(Crackers)]
+            if(Ingredients[typeof(Crackers)].Quantity + AmountOfCrackers > MaxIngredients[typeof(Crackers)])
             {
                 throw new Exception("Too much Crackers!!!");
             }
+            
             else
             {
-                Ingredients[typeof(Crackers)].Quantity + = AmountOfCrackers
+                Ingredients[typeof(Crackers)].Quantity += AmountOfCrackers;
             }                   
         }
         public void AddCookies(double AmountOfCookies)
         {
-            if(Ingredients[typeof(Cookies)]).Quantity + AmountOfCookies > MaxIngredients[typeof(Cookies)]
+            if(Ingredients[typeof(Cookies)].Quantity + AmountOfCookies > MaxIngredients[typeof(Cookies)])
             {
                 throw new Exception("Too much Cookies!!!");
             }
             else
             {
-                Ingredients[typeof(Cookies)].Quantity + = AmountOfCookies
+                Ingredients[typeof(Cookies)].Quantity += AmountOfCookies;
             }                   
         }
         public override Consumable Make()
         {
-            Ingredients[typeof(VendingMachine)] = new VendingMachine(Ingredients[typeof(Chips),Ingredients[typeof(Pretzles)],Ingredients[typeof(Soda)],Ingredients[typeof(Candy)],Ingredients[typeof(Lighters)],Ingredients[typeof(Crackers)],Ingredients[typeof(Cookiest)]]);
-            Ingredients[typeof(VendingMachine)].Quantity = Ingredients[typeof(Chips)].Quantity;
-            Ingredients[typeof(Chips)].Quantity = 0;
-            Ingredients[typeof(VendingMachine)].Quantity = Ingredients[typeof(Pretzles)].Quantity;
-            Ingredients[typeof(Pretzles)].Quantity = 0;
-            Ingredients[typeof(VendingMachine)].Quantity = Ingredients[typeof(Soda)].Quantity;
-            Ingredients[typeof(Soda)].Quantity = 0;
-            Ingredients[typeof(VendingMachine)].Quantity = Ingredients[typeof(Candy)].Quantity;
-            Ingredients[typeof(Candy)].Quantity = 0;
-            Ingredients[typeof(VendingMachine)].Quantity = Ingredients[typeof(Lighters)].Quantity;
-            Ingredients[typeof(Lighters)].Quantity = 0;
-            Ingredients[typeof(VendingMachine)].Quantity = Ingredients[typeof(Cookies)].Quantity;
-            Ingredients[typeof(Cookies)].Quantity = 0;
+            Ingredients[typeof(Chips)].Quantity = Ingredients[typeof(Chips)].Quantity;
+            Ingredients[typeof(Chips)].Quantity = 5;
+            Ingredients[typeof(Pretzles)].Quantity = Ingredients[typeof(Pretzles)].Quantity;
+            Ingredients[typeof(Pretzles)].Quantity = 8;
+            Ingredients[typeof(Soda)].Quantity = Ingredients[typeof(Soda)].Quantity;
+            Ingredients[typeof(Soda)].Quantity = 1;
+            Ingredients[typeof(Candy)].Quantity = Ingredients[typeof(Candy)].Quantity;
+            Ingredients[typeof(Candy)].Quantity = 3;
+            Ingredients[typeof(Lighters)].Quantity = Ingredients[typeof(Lighters)].Quantity;
+            Ingredients[typeof(Lighters)].Quantity = 7;
+            Ingredients[typeof(Cookies)].Quantity = Ingredients[typeof(Cookies)].Quantity;
+            Ingredients[typeof(Cookies)].Quantity = 12;
             return Ingredients[typeof(VendingMachine)];
         }
         public Consumable deliver(int code)
@@ -125,48 +126,37 @@ namespace prg2._2_oop
             {
                 return Ingredients[typeof(Chips)];
             }
-            else
-            {
-                if(code == 489)
+                else   if(code == 489)
                 {
                     return Ingredients[typeof(Pretzles)];                 
                 }
-            }
-            else
-            {
-                if(code == 333)
+            
+                else   if(code == 333)
                 {
                    return Ingredients[typeof(Soda)];
                 }
-            }
-            else
-            {
-                if(code == 214)
+            
+                else   if(code == 214)
                 {
                     return Ingredients[typeof(Candy)];
                 }                
-            }
-            else
-            {
-                if(code == 186)
+                else   if(code == 186)
                 {
                     return Ingredients[typeof(Lighters)];
                 }
-            }
-            else
-            {
-                if(code == 274)
+                else   if(code == 274)
                 {
                    return Ingredients[typeof(Crackers)];               
                 }
-            }
-            else
-            {
-                if(code == 487)
+                else   if(code == 487)
                 {
                     return Ingredients[typeof(Cookies)];
                 }
+                else
+                {
+                    return null;
+                }
             }
         }
-    }
-}
+
+    }    
