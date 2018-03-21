@@ -14,11 +14,19 @@ namespace _0_main
         static void Main(string[] args)
         {
             
-            /*Console .WriteLine("Launching main");*/
-            NodeTest();
-            /*Console.ReadKey();*/
+            Console .WriteLine("Launching main");
+            //NodeTest();
+            HigherOrderTest();
+            Console.ReadKey();
         
         }
+
+        private static void HigherOrderTest()
+        {
+            Select s = new Select();
+            s.run();
+        }
+
         static void NodeTest()
         {
             Node<int> List = new Node<int>(0);
